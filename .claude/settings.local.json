@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(py --version)",
+      "PowerShell(python --version)",
+      "PowerShell(python -c \"print\\('ok'\\)\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(rm -f \"C:\\\\Users\\\\user\\\\Desktop\\\\260607_game\\\\apps\\\\2048\\\\.serve.ps1\" \"C:\\\\Users\\\\user\\\\Desktop\\\\260607_game\\\\apps\\\\2048\\\\.claude\\\\launch.json\" \"C:\\\\Users\\\\user\\\\Desktop\\\\260607_game\\\\.claude\\\\launch.json\")",
+      "Bash(rmdir \"C:\\\\Users\\\\user\\\\Desktop\\\\260607_game\\\\apps\\\\2048\\\\.claude\")",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git -c user.name=Claude -c user.email=noreply@anthropic.com commit -q -m 'Add 2048 game webapp and blog landing page *)",
+      "Bash(echo \"exit=$?\")"
+    ]
+  }
+}
