@@ -11,7 +11,20 @@
       "Bash(git init *)",
       "Bash(git add *)",
       "Bash(git -c user.name=Claude -c user.email=noreply@anthropic.com commit -q -m 'Add 2048 game webapp and blog landing page *)",
-      "Bash(echo \"exit=$?\")"
+      "Bash(echo \"exit=$?\")",
+      "Bash(gh auth *)",
+      "Bash(gh --version)",
+      "PowerShell($g = Get-Command gh -ErrorAction SilentlyContinue; if \\($g\\) { $g.Source } else { \"gh not found\" })",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(python -c \"print\\('ok'\\)\")",
+      "Bash(where.exe python3 *)",
+      "Bash(where.exe php *)",
+      "Bash(where.exe ruby *)",
+      "Bash(where.exe pwsh *)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri 'http://127.0.0.1:5599/index.html' -UseBasicParsing -TimeoutSec 5; Write-Host \\(\"STATUS \" + $r.StatusCode + \" LEN \" + $r.Content.Length\\) } catch { Write-Host \\(\"ERR \" + $_.Exception.Message\\) })",
+      "PowerShell(Get-NetTCPConnection -LocalPort 5599 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; Write-Host \"cleared\")"
     ]
   }
 }
